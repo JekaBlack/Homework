@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document 3</title>
+  </head>
+  <ul>
+  <li> <span>Задание 1</span> <a href="index1.html">index1.html</a></li> 
+  <li> <span>Задание 2</span> <a href="index2.html">index2.html</a></li>
+  <li> <san>Задание 4</span> <a>index3.html</a></li>
+  </ul>
+  <body>
+    <form action="">
+      <input
+        type="text"
+        name="User name"
+        placeholder="User name"
+        id="User name"
+      />
+      <p>
+        <input type="email" name="Email" placeholder="Email" id="Email" />
+      </p>
+      <p>
+        <input
+          type="password"
+          placeholder="Password"
+          name="Password"
+          min="6"
+          id="Password"
+        />
+      </p>
+      <p>
+        <span>Male</span>
+        <input type="radio" name="gender" value="Male" id="Male" />
+      </p>
+      <p>
+        <span>Female</span>
+        <input type="radio"name="gender" value="Female" id="Female" />
+      </p>
+      <p>
+        <input type="number" name="Age" placeholder="Age" min="0" id="Age" />
+      </p>
+      <p>
+        <span>Married</span>
+        <input type="checkbox" name="Married" id="Married" />
+      </p>
+      <p>
+        <span>Phone +38</span>
+        <input
+          type="tel"
+          placeholder="(000) 000-00-00"
+          name="Phone"
+          id="Phone"
+          pattern="\+38 (000) 000-00-00"
+        />
+      </p>
+      <p>
+        <input list="Cities" placeholder="City" />
+        <datalist id="Cities">
+          <option>Киев</option>
+          <option>Харьков</option>
+          <option>Днепр</option>
+          <option>Одесса</option>
+          <option>Львов</option>
+          <option>Херсон</option>
+        </datalist>
+      </p>
+      <p><textarea name="About" id="About" cols="30" rows="10"></textarea></p>
+      <p>
+        <input type="submit" value="Save" />
+      </p>
+    </form>
+  </body>
+</html>
