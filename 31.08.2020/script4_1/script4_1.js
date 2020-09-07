@@ -1,4 +1,4 @@
-var person = {
+var person1 = {
     firstname: "Jake",
     age: 30,
     job: {
@@ -7,17 +7,17 @@ var person = {
 };
 
 while (true){
-    var field = prompt('Enter field', '');
+    var field = prompt('Введите характеристику', '');
 
     if (!field) break;
 
-    let value = prompt('Enter value', '');
+    if (field in person1) {
+        alert('Эта харктеритика уже есть ' + person1[field]);
+    } else {
+        var value = prompt('Введите значение этой характеристики', '');
 
-    person[field] = value;
-    
-    if (field === undefined){
-        console.log(field, value);
+        person1[field] = value;
     }
-}
+};
 
-console.log(person)
+console.log(person1)
